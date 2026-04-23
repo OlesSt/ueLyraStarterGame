@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D0116F66-7C95-4F84-8B63-A99257E24270}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{D0116F66-7C95-4F84-8B63-A99257E24270}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="TestSound" ID="{794577CA-F847-4AF5-934C-53FAAC5FA997}" ShortID="864707211">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Perc_Cinematic-001" ID="{F6C76F72-4011-46F8-AD71-0F32A456D7C1}">
+							<Language>SFX</Language>
+							<AudioFile>Perc_Cinematic-001.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="564251991"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Perc_Cinematic-001" ID="{F6C76F72-4011-46F8-AD71-0F32A456D7C1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

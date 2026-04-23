@@ -1,0 +1,41 @@
+# ========================
+# UNREAL ENGINE
+# ========================
+Binaries/
+Build/
+Intermediate/
+Saved/
+DerivedDataCache/
+Platforms/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.suo
+*.sln
+*.xcworkspace
+*.xcodeproj
+
+# ========================
+# UNREAL CONTENT (Epic - regeneratable or licensed)
+# ========================
+Content/
+Plugins/
+
+# ========================
+# WWISE PROJECT
+# ========================
+ueLyraStarterGame_WwiseProject/.cache/
+ueLyraStarterGame_WwiseProject/.backup/
+ueLyraStarterGame_WwiseProject/*.wsettings
+ueLyraStarterGame_WwiseProject/.validationcache
+ueLyraStarterGame_WwiseProject/IncrementalSoundBankData.xml
+ueLyraStarterGame_WwiseProject/GeneratedSoundBanks/
+ueLyraStarterGame_WwiseProject/*.prof
+
+# ========================
+# MAC
+# ========================
+.DS_Store
+*.dSYM
+*.dSYM.zip
