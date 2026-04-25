@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{22A19B78-033F-4942-974D-5DEAE5D821DB}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Player" ID="{22A19B78-033F-4942-974D-5DEAE5D821DB}" PersistMode="Standalone">
+			<ChildrenList>
+				<PropertyContainer Name="PlayerMAIN" ID="{5156A68F-D78B-42D9-BF6D-EE4158C0FD34}" ShortID="675850288">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="plr_foleyJump" ID="{9F7BD484-2D3C-4EB7-8BCD-98E459F92C5D}" ShortID="422432419">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{016990F6-585D-4267-ACAE-0283F3B20096}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_foleyJump" ID="{FF09A663-58BA-4AB6-9374-661789BCB57D}">
+									<Language>SFX</Language>
+									<AudioFile>plr_foleyJump.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="39251205"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_foleyJump" ID="{FF09A663-58BA-4AB6-9374-661789BCB57D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="plr_foleySit" ID="{26F78C68-282E-4F74-92FE-813C7B131174}" ShortID="980080043">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_foleySit" ID="{1731730A-4648-4918-8963-6FA2D7FEBD7F}">
+									<Language>SFX</Language>
+									<AudioFile>plr_foleySit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="665440980"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_foleySit" ID="{1731730A-4648-4918-8963-6FA2D7FEBD7F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="plr_foleyStand" ID="{4471DE0A-F277-47CF-A02E-F5174C09B1BF}" ShortID="513340594">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_foleyStand" ID="{B0E3CE96-402F-4FBE-B433-2000A38C6795}">
+									<Language>SFX</Language>
+									<AudioFile>plr_foleyStand.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="312847552"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_foleyStand" ID="{B0E3CE96-402F-4FBE-B433-2000A38C6795}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="plr_FootSteps" ID="{096ED9BA-D02A-41F8-8574-9B7E7D1C3498}" ShortID="12107839">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SW_Surfaces" ID="{845FF74C-836D-4B02-AC59-A0A94D9482C8}" WorkUnitID="{EEF4F387-E9FA-428A-BDA9-EBF510D2568C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="plr_footSteps_default" ID="{EC16E142-1BD6-400F-A727-8D968A9BFB30}" ShortID="30981046">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{835A9810-4806-47C7-AF2F-1EF8B01C2226}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="plr_footStep_default_001" ID="{10B686C8-7EFA-4D0F-8FFB-73A292656F1E}" ShortID="786171942">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_default_001" ID="{BFAA4309-8316-407E-8D50-B4DE07CD6A6B}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_default_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1053418942"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_default_001" ID="{BFAA4309-8316-407E-8D50-B4DE07CD6A6B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_default_002" ID="{F97E6811-42CC-4A28-BDAB-8D76C1179624}" ShortID="92683923">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_default_002" ID="{1D337FC9-559B-4658-A5FB-8DA09AEF2C98}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_default_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780786141"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_default_002" ID="{1D337FC9-559B-4658-A5FB-8DA09AEF2C98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_default_003" ID="{1DE9580D-9C46-466D-A09A-1683590CE465}" ShortID="802547518">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_default_003" ID="{486A7CA6-2F65-45B1-ABBF-5FE45138F521}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_default_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="505099703"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_default_003" ID="{486A7CA6-2F65-45B1-ABBF-5FE45138F521}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_default_004" ID="{00D17929-D003-4B9D-9A70-B68EB2DAC7C7}" ShortID="1037419637">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_default_004" ID="{8442D48D-0499-43DB-A7A4-2047027DADF2}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_default_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="837684558"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_default_004" ID="{8442D48D-0499-43DB-A7A4-2047027DADF2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_default_005" ID="{DFF23FE9-AD93-4989-A154-D4667CE45049}" ShortID="41128791">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_default_005" ID="{5FE717E9-5B72-4549-9C7A-74A15445849E}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_default_005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="212197164"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_default_005" ID="{5FE717E9-5B72-4549-9C7A-74A15445849E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="plr_footSteps_concrete" ID="{C507C60F-6172-4248-9F52-BF0AF3A00EE0}" ShortID="234694404">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4CF24B9F-4696-4517-B732-096A9603D73B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="plr_footStep_concrete_001" ID="{DBB0B98F-DF27-4D4D-BCA7-9A8C988025C4}" ShortID="999546641">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_concrete_001" ID="{0BD8352D-B423-4922-80CA-C80C5331AA54}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_concrete_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776019011"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_concrete_001" ID="{0BD8352D-B423-4922-80CA-C80C5331AA54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_concrete_002" ID="{C3479B96-10A2-4540-AC1F-E25B3CF9D8EC}" ShortID="541253208">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_concrete_002" ID="{57E70C3F-3800-4D55-9767-88481F39F88C}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_concrete_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="763821933"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_concrete_002" ID="{57E70C3F-3800-4D55-9767-88481F39F88C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_concrete_003" ID="{ED4DA19F-98F2-4B53-90E4-08C9E8766CBF}" ShortID="458941813">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_concrete_003" ID="{1FBA86FE-8139-42A3-9B9B-30674E4AB5D1}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_concrete_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="688215255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_concrete_003" ID="{1FBA86FE-8139-42A3-9B9B-30674E4AB5D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_concrete_004" ID="{1FD74B36-479D-4EA1-9BAC-8337A7403C63}" ShortID="463239749">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_concrete_004" ID="{776196FB-CE83-4C6C-8C37-1072FCA2DF0E}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_concrete_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="320963529"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_concrete_004" ID="{776196FB-CE83-4C6C-8C37-1072FCA2DF0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_concrete_005" ID="{DC6101A5-742A-4D63-9289-5C1609FFEE45}" ShortID="890288816">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_concrete_005" ID="{DA8AF4AD-B5A1-4E80-8E41-A4D2C5257355}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_concrete_005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="415121107"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_concrete_005" ID="{DA8AF4AD-B5A1-4E80-8E41-A4D2C5257355}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="plr_footSteps_glass" ID="{9489FC46-6B49-4F70-BAB3-CF416B128352}" ShortID="814138874">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BBE7C479-C1D9-4C4D-8D06-A33540713C47}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="plr_footStep_glass_001" ID="{F64B4BC4-5AF6-4A4C-A05F-EE39319DEADD}" ShortID="674070390">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_glass_001" ID="{0C70F73C-9568-47EC-8A77-5C30EE74408A}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_glass_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="154369464"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_glass_001" ID="{0C70F73C-9568-47EC-8A77-5C30EE74408A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_glass_002" ID="{AFA7C768-75C9-4308-98F4-53860EE70467}" ShortID="252603477">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_glass_002" ID="{E74F6E1E-F429-491A-A236-A4C9D2D159A1}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_glass_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="638346348"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_glass_002" ID="{E74F6E1E-F429-491A-A236-A4C9D2D159A1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_glass_003" ID="{041691F2-2676-427E-92A2-75FC18D8555B}" ShortID="1042538854">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_glass_003" ID="{9915F47E-6CE3-4AFD-A1B2-1471C5AF64B5}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_glass_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="359308558"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_glass_003" ID="{9915F47E-6CE3-4AFD-A1B2-1471C5AF64B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_glass_004" ID="{0F6CEFD4-0CEA-4A34-A3A0-12B6B6567AD3}" ShortID="99188476">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_glass_004" ID="{76E11A95-9AB1-45A3-AE63-74E52831EC8E}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_glass_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="40510514"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_glass_004" ID="{76E11A95-9AB1-45A3-AE63-74E52831EC8E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="plr_footStep_glass_005" ID="{7DF52F09-22C2-4B08-8CEF-E9CCA7B4A25D}" ShortID="828095384">
+											<PropertyList>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="plr_footStep_glass_005" ID="{7656114F-4579-425F-A71B-7428EFC8CDB0}">
+													<Language>SFX</Language>
+													<AudioFile>plr_footStep_glass_005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="29814861"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="plr_footStep_glass_005" ID="{7656114F-4579-425F-A71B-7428EFC8CDB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footSteps_concrete" ID="{C507C60F-6172-4248-9F52-BF0AF3A00EE0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footSteps_default" ID="{EC16E142-1BD6-400F-A727-8D968A9BFB30}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footSteps_glass" ID="{9489FC46-6B49-4F70-BAB3-CF416B128352}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="PM_Default" ID="{A8541022-DAF0-4DA5-B51A-2F142644734D}"/>
+										<ItemList>
+											<ItemRef Name="plr_footSteps_default" ID="{EC16E142-1BD6-400F-A727-8D968A9BFB30}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="PM_Concrete" ID="{D369867E-83C0-445F-A93B-8C9E8A5713E6}"/>
+										<ItemList>
+											<ItemRef Name="plr_footSteps_concrete" ID="{C507C60F-6172-4248-9F52-BF0AF3A00EE0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="PM_Glass" ID="{8E430492-1145-42CB-A18D-98380B23F102}"/>
+										<ItemList>
+											<ItemRef Name="plr_footSteps_glass" ID="{9489FC46-6B49-4F70-BAB3-CF416B128352}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="plr_FootLand" ID="{0E44128E-DA77-403E-AC50-3BF5DBF60500}" ShortID="397497606">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SW_Surfaces" ID="{845FF74C-836D-4B02-AC59-A0A94D9482C8}" WorkUnitID="{EEF4F387-E9FA-428A-BDA9-EBF510D2568C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="plr_footLand_consete" ID="{0666B786-9D9E-457E-B415-8E394A3A3003}" ShortID="991432942">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="plr_footLand_consete" ID="{34A842EC-FEEB-4A7D-8874-D1001C8EC4B6}">
+											<Language>SFX</Language>
+											<AudioFile>plr_footLand_consete.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1037154962"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="plr_footLand_consete" ID="{34A842EC-FEEB-4A7D-8874-D1001C8EC4B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="plr_footLand_default" ID="{5196782C-5590-4D12-93A5-B3C8BEBC22B7}" ShortID="202435364">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="plr_footLand_default" ID="{E854B971-E9B3-4B23-A079-215B8658D758}">
+											<Language>SFX</Language>
+											<AudioFile>plr_footLand_default.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="378002460"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="plr_footLand_default" ID="{E854B971-E9B3-4B23-A079-215B8658D758}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="plr_footLand_glass" ID="{0A8C6D37-235F-4C03-95E4-47F94CFDE138}" ShortID="254344024">
+									<PropertyList>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="plr_footLand_glass" ID="{64DDDDA2-C89F-48A3-89B8-8849F98308BA}">
+											<Language>SFX</Language>
+											<AudioFile>plr_footLand_glass.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="754665550"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="plr_footLand_glass" ID="{64DDDDA2-C89F-48A3-89B8-8849F98308BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footLand_default" ID="{5196782C-5590-4D12-93A5-B3C8BEBC22B7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footLand_glass" ID="{0A8C6D37-235F-4C03-95E4-47F94CFDE138}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="plr_footLand_consete" ID="{0666B786-9D9E-457E-B415-8E394A3A3003}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="PM_Default" ID="{A8541022-DAF0-4DA5-B51A-2F142644734D}"/>
+										<ItemList>
+											<ItemRef Name="plr_footLand_default" ID="{5196782C-5590-4D12-93A5-B3C8BEBC22B7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="PM_Concrete" ID="{D369867E-83C0-445F-A93B-8C9E8A5713E6}"/>
+										<ItemList>
+											<ItemRef Name="plr_footLand_consete" ID="{0666B786-9D9E-457E-B415-8E394A3A3003}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="PM_Glass" ID="{8E430492-1145-42CB-A18D-98380B23F102}"/>
+										<ItemList>
+											<ItemRef Name="plr_footLand_glass" ID="{0A8C6D37-235F-4C03-95E4-47F94CFDE138}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

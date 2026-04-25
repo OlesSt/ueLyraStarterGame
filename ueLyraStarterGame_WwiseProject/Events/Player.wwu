@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Player" ID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_plr_foleyStand" ID="{7B1A02B3-B448-4E3B-AF81-24FBCBF2A9AC}">
+					<ChildrenList>
+						<Action Name="" ID="{CB4A203D-696B-41F4-927A-5EA40FF0ECE7}" ShortID="399032734">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_foleyStand" ID="{4471DE0A-F277-47CF-A02E-F5174C09B1BF}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_foleyJump" ID="{F5CBDF32-0A21-40B6-8174-98E9DA8E33E3}">
+					<ChildrenList>
+						<Action Name="" ID="{BCEB14F7-48A3-4335-8CE6-E57DAA2CBBD3}" ShortID="818475068">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_foleyJump" ID="{9F7BD484-2D3C-4EB7-8BCD-98E459F92C5D}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_FootLand" ID="{2DBFB3CD-1B6B-42D7-BBA3-3B14C1E377ED}">
+					<ChildrenList>
+						<Action Name="" ID="{40C3E284-D809-43FB-B466-7DD65B59098F}" ShortID="573908872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_FootLand" ID="{0E44128E-DA77-403E-AC50-3BF5DBF60500}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_foleySit" ID="{08E1497C-0AE9-496A-B9D6-99C77E5C9945}">
+					<ChildrenList>
+						<Action Name="" ID="{02BC1B03-86D3-49EC-9CB3-55008A13AF12}" ShortID="732795233">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_foleySit" ID="{26F78C68-282E-4F74-92FE-813C7B131174}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_FootSteps" ID="{194CC304-D979-4C93-965C-2AB6FDC4634E}">
+					<ChildrenList>
+						<Action Name="" ID="{6314C1DE-FC5D-4B44-8EFB-97516DDEC2A0}" ShortID="869218647">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_FootSteps" ID="{096ED9BA-D02A-41F8-8574-9B7E7D1C3498}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
