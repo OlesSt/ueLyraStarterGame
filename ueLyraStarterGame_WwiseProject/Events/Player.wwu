@@ -58,6 +58,51 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_plr_Dash" ID="{361F7655-D5E6-4149-BAED-249F238DD362}">
+					<ChildrenList>
+						<Action Name="" ID="{468540B5-5D7E-443E-B850-732B3E2DC862}" ShortID="896241822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Dash" ID="{6627EC8F-0805-47AE-BA09-0BBEFA9A37D1}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_Dead" ID="{AD367FD2-F476-48C6-8CAF-1D5734BDD6E1}">
+					<ChildrenList>
+						<Action Name="" ID="{062CA73C-EA24-4263-8F8F-05FB9DA9FECD}" ShortID="49753815">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Dead" ID="{DF897945-7A90-4352-9D01-2BAE56F548BB}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_Spawn" ID="{E962B619-A120-4416-BDA9-9B07FF367760}">
+					<PropertyList>
+						<Property Name="CooldownTime" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{10D4F7CF-4475-4B25-9695-9AD688D52BA9}" ShortID="458041613">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Spawn" ID="{D4E465C1-3D80-4860-9C1E-B11C322DAA60}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
