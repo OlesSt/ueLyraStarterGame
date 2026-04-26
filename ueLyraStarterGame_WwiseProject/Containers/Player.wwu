@@ -70,6 +70,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="plr_foleySit" ID="{1731730A-4648-4918-8963-6FA2D7FEBD7F}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.20841"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.50082"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>plr_foleySit.wav</AudioFile>
 									<MediaIDList>
@@ -99,6 +104,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="plr_foleyStand" ID="{B0E3CE96-402F-4FBE-B433-2000A38C6795}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.01697"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.14715"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.02042"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.50266"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>plr_foleyStand.wav</AudioFile>
 									<MediaIDList>
@@ -825,6 +837,39 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="plr_Spawn" ID="{A50E1970-9D29-4052-9935-A0F34067B64E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="plr_Emote" ID="{41B7A152-8E29-4B6A-A0A7-6EACBC2B9F56}" ShortID="432472596">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_Emote" ID="{868CB028-087F-45AF-ADA5-66A7D0D1F985}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.18885"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>plr_Emote.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="165482662"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_Emote" ID="{868CB028-087F-45AF-ADA5-66A7D0D1F985}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -103,6 +103,45 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_plr_Emote" ID="{2D01A12C-EF64-4E50-B4CD-C007202C92F5}">
+					<ChildrenList>
+						<Action Name="" ID="{807FD158-07C0-46F9-915C-58DA807C930E}" ShortID="990968279">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Emote" ID="{41B7A152-8E29-4B6A-A0A7-6EACBC2B9F56}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_plr_Emote" ID="{38689C1D-9D3E-491C-A514-D47ED87BFC90}">
+					<ChildrenList>
+						<Action Name="" ID="{5E7A77FA-C76E-44CB-918B-521E93BDD20D}" ShortID="196516878">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Emote" ID="{41B7A152-8E29-4B6A-A0A7-6EACBC2B9F56}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_plr_Dash" ID="{167CFA34-B174-4E1F-A79D-698A4BD6D428}">
+					<ChildrenList>
+						<Action Name="" ID="{18388809-6E4F-4490-A39C-38174BC2A34F}" ShortID="913346113">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_Dash" ID="{6627EC8F-0805-47AE-BA09-0BBEFA9A37D1}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
