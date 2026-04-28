@@ -2,9 +2,15 @@
 <WwiseDocument Type="WorkUnit" ID="{22A19B78-033F-4942-974D-5DEAE5D821DB}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="Player" ID="{22A19B78-033F-4942-974D-5DEAE5D821DB}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="14"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<PropertyContainer Name="PlayerMAIN" ID="{5156A68F-D78B-42D9-BF6D-EE4158C0FD34}" ShortID="675850288">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -18,6 +24,8 @@
 					<ChildrenList>
 						<Sound Name="plr_foleyJump" ID="{9F7BD484-2D3C-4EB7-8BCD-98E459F92C5D}" ShortID="422432419">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -27,7 +35,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -54,9 +62,11 @@
 						</Sound>
 						<Sound Name="plr_foleySit" ID="{26F78C68-282E-4F74-92FE-813C7B131174}" ShortID="980080043">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -88,9 +98,11 @@
 						</Sound>
 						<Sound Name="plr_foleyStand" ID="{4471DE0A-F277-47CF-A02E-F5174C09B1BF}" ShortID="513340594">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -123,6 +135,38 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="plr_FootSteps" ID="{096ED9BA-D02A-41F8-8574-9B7E7D1C3498}" ShortID="12107839">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A2280116-3344-4DA0-9004-122B520813F2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8F36FA3B-11B3-404F-A6A0-1778AA7705E4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -636,6 +680,38 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="plr_FootLand" ID="{0E44128E-DA77-403E-AC50-3BF5DBF60500}" ShortID="397497606">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3AAF2D35-16B0-42B6-97AC-4CCE0A9E3D47}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{31C79CFF-3DFB-4924-A78B-E82FE6FA1C2D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -774,6 +850,15 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<Sound Name="plr_Dash" ID="{6627EC8F-0805-47AE-BA09-0BBEFA9A37D1}" ShortID="886926561">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -796,6 +881,15 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="plr_Dead" ID="{DF897945-7A90-4352-9D01-2BAE56F548BB}" ShortID="232827589">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -818,6 +912,15 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="plr_Spawn" ID="{D4E465C1-3D80-4860-9C1E-B11C322DAA60}" ShortID="593290525">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -841,11 +944,9 @@
 						</Sound>
 						<Sound Name="plr_Emote" ID="{41B7A152-8E29-4B6A-A0A7-6EACBC2B9F56}" ShortID="432472596">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -868,6 +969,28 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{721E38A8-EECF-4759-B623-0F5808CDA6BF}" ShortID="669983687">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{D06DD767-B689-4415-91EF-077C1CD59393}" ShortID="871884187" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="3656.47"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="5696.072"/>
+															<Property Name="GainBand2" Type="Real32" Value="-3.753555"/>
+															<Property Name="GainBand3" Type="Real32" Value="-4.208531"/>
+															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="plr_Emote" ID="{868CB028-087F-45AF-ADA5-66A7D0D1F985}" Platform="Linked"/>
 							</ActiveSourceList>

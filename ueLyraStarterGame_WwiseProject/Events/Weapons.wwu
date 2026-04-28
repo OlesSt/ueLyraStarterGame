@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Weapons" ID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Shotgun_FIRE" ID="{999D9DEA-91E1-4EEA-B4EE-0B129C2A9DFA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{26A63549-BFAA-4E2B-9C7C-6BCEE5182E18}" ShortID="107383235">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shotgun_FIRE" ID="{ECC0A1C9-10AE-406D-8F41-DBE9C097D378}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0DDA48B2-D3DE-469D-A737-A70F58987A4B}" ShortID="999923615">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shotgun_Pump" ID="{3166BAA1-7BC7-4825-BEE2-ADBC2B773E38}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0794BA52-7190-464C-BF73-2E2AD438639E}" ShortID="577171938">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shells" ID="{332A5F57-9013-4BB0-8630-0FD911FC9A27}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_chargeShotgun" ID="{7EAA3268-EC5B-4A0D-8A03-6B4DC7993F7F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{D6D0AA86-23B8-4D4D-9DFD-9C99D28B4C4D}" ShortID="584371452">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_chargeShotgun" ID="{58B8F241-452C-4BC0-9F5C-8B2453595A98}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_equipRifle" ID="{B19975E4-39FD-41CA-AC59-D0002453C4A2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{D5E614F0-2FF3-4610-9BD6-1BCFAF7BE6DF}" ShortID="859535794">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_equipRifle" ID="{6EBCEE41-553D-4DBC-8ED2-5D785A31472D}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rifle_Empty" ID="{EC3611CD-93A3-4B33-9FA6-1A7F001D740E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{1CF0D107-AE86-4210-95DA-99D4E10DA1BD}" ShortID="959096812">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rifle_Empty" ID="{EF59AE69-D9F2-4F54-ADDF-F25D6BF3E7F7}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_chargeRifle" ID="{499FEC62-0A39-497B-9633-1203CBEAAF8D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{604D561D-D967-4BCB-B0A7-80C29FBE6DED}" ShortID="966034820">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_chargeRifle" ID="{BECF5B57-45D0-438B-90D8-E1263C99A9EE}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Rifle_FIRE" ID="{F9A72B75-8ADC-49DE-91D1-4EF74657F9EA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{FBB0502F-975F-44DC-80A0-FC0B32DD12F0}" ShortID="335328872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="rifle_FIRE" ID="{60C8AFE4-6F7F-43EC-BEE4-7A717D485BFA}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8925FB6E-BB4C-425C-946C-69DF025DA1C6}" ShortID="479948746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shells" ID="{332A5F57-9013-4BB0-8630-0FD911FC9A27}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_chargePistol" ID="{E41790BA-87E6-417A-B3D9-C93DC0D4F908}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{2D1B427F-740E-4BB2-B67B-1A9C4AC014CE}" ShortID="933548625">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_chargePistol" ID="{35B3349A-6B86-482C-BB64-B2D0933E4258}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_equipPistol" ID="{10E53243-B2EB-4361-8E3C-D6C904FFDD03}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{3B230869-CDA1-470D-9C05-ECA5F069490F}" ShortID="332183971">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_equipPistol" ID="{0DCFEC5C-843F-4836-8C40-83DEB8206C12}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pistol_Empty" ID="{EDEE51F5-89E3-4957-8692-0FD33BFAF51C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{AB6B0A1B-8A23-4672-981E-D9FBF4808A11}" ShortID="1035419888">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pistol_Empty" ID="{695202F3-CB29-4A41-B137-6577077C585C}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pistol_FIRE" ID="{95510AC8-0CF8-45FC-99CA-442AA26AC4BE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{975782F7-AEA7-4C77-AE84-CAE9D472EAFD}" ShortID="233891480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pistol_Fire" ID="{C83464B4-B9C9-4434-A0AB-1462F2E96E3C}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{303671E8-1FF9-4260-AAE7-845E4B7DACF4}" ShortID="897232247">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shells" ID="{332A5F57-9013-4BB0-8630-0FD911FC9A27}" WorkUnitID="{8B148C9E-6845-48AB-8551-CE538546FB24}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -10,7 +10,18 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}"/>
+						<Bus Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="14"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="bus_Weapons" ID="{CE1739F3-9B17-426A-9F65-64BCB1F8A3FF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
