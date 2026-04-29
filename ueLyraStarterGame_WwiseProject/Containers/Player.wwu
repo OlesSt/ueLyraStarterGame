@@ -1001,6 +1001,7 @@
 						</Sound>
 						<Sound Name="plr_aimIn" ID="{7163BBF0-151D-47E1-AF30-DBA319BE5559}" ShortID="76924378">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -1037,6 +1038,7 @@
 						</Sound>
 						<Sound Name="plr_aimOut" ID="{A6625D4A-761E-476A-9579-BCD5AC32B1D6}" ShortID="1047263062">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>

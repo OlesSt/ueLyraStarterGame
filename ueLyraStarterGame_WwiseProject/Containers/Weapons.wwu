@@ -3049,7 +3049,14 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="grenade_Bounce" ID="{F8F48D02-FB6C-46E1-BD35-FE0EE4280F96}" ShortID="708792884">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Distance_CLOSE" ID="{809899D2-988F-4270-A926-975C8B9C4908}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 								</Reference>
