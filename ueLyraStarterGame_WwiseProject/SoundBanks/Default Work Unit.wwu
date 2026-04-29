@@ -9,12 +9,18 @@
 						<ObjectRef Name="Play_plr_equipRifle" ID="{B19975E4-39FD-41CA-AC59-D0002453C4A2}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_equipPistol" ID="{10E53243-B2EB-4361-8E3C-D6C904FFDD03}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pistol_FIRE" ID="{95510AC8-0CF8-45FC-99CA-442AA26AC4BE}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_punchPistol" ID="{9FA567F3-25DD-46E9-B840-3868D2CC0C98}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pistol_Empty" ID="{EDEE51F5-89E3-4957-8692-0FD33BFAF51C}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_chargeRifle" ID="{499FEC62-0A39-497B-9633-1203CBEAAF8D}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rifle_FIRE" ID="{F9A72B75-8ADC-49DE-91D1-4EF74657F9EA}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_chargeShotgun" ID="{7EAA3268-EC5B-4A0D-8A03-6B4DC7993F7F}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_punchShotgun" ID="{2AAA4326-4295-4ADE-9BD6-8621EEC3AACB}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Rifle_Empty" ID="{EC3611CD-93A3-4B33-9FA6-1A7F001D740E}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_punchRifle" ID="{8B1C9DBA-6244-4BF4-8167-63439876E6F9}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_throwGrenade" ID="{386FA5FF-F49D-4C6F-8CE6-BDF30A4833A4}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_grenade_Explode" ID="{8F80C227-C506-4DA2-AACA-25EE6899E1BE}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Shotgun_FIRE" ID="{999D9DEA-91E1-4EEA-B4EE-0B129C2A9DFA}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_grenade_Bounce" ID="{775B3EB1-43D0-4F93-9539-0534641BAA92}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -23,8 +29,10 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_plr_foleyJump" ID="{F5CBDF32-0A21-40B6-8174-98E9DA8E33E3}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_Dash" ID="{361F7655-D5E6-4149-BAED-249F238DD362}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_aimOut" ID="{224A4DDF-AFEA-4222-9756-91807C3C1408}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_FootLand" ID="{2DBFB3CD-1B6B-42D7-BBA3-3B14C1E377ED}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_Spawn" ID="{E962B619-A120-4416-BDA9-9B07FF367760}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_plr_aimIn" ID="{BDFC81A7-33C9-485D-A020-98BFA371D97F}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_Dead" ID="{AD367FD2-F476-48C6-8CAF-1D5734BDD6E1}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_plr_Emote" ID="{38689C1D-9D3E-491C-A514-D47ED87BFC90}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_plr_foleySit" ID="{08E1497C-0AE9-496A-B9D6-99C77E5C9945}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}" Origin="Manual" Filter="7"/>

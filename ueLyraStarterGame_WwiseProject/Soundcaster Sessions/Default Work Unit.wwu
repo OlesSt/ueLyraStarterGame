@@ -26,6 +26,10 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_plr_aimIn" ID="{BDFC81A7-33C9-485D-A020-98BFA371D97F}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_plr_chargePistol" ID="{E41790BA-87E6-417A-B3D9-C93DC0D4F908}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -46,12 +50,20 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_plr_aimOut" ID="{224A4DDF-AFEA-4222-9756-91807C3C1408}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_plr_equipPistol" ID="{10E53243-B2EB-4361-8E3C-D6C904FFDD03}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_plr_equipRifle" ID="{B19975E4-39FD-41CA-AC59-D0002453C4A2}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_plr_throwGrenade" ID="{386FA5FF-F49D-4C6F-8CE6-BDF30A4833A4}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_plr_foleySit" ID="{08E1497C-0AE9-496A-B9D6-99C77E5C9945}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}"/>
@@ -70,12 +82,32 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_grenade_Bounce" ID="{775B3EB1-43D0-4F93-9539-0534641BAA92}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_plr_foleyStand" ID="{7B1A02B3-B448-4E3B-AF81-24FBCBF2A9AC}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}"/>
 							<Position X="3" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_plr_foleyJump" ID="{F5CBDF32-0A21-40B6-8174-98E9DA8E33E3}" WorkUnitID="{3A88499B-8B01-4E7D-8646-84FEB26472AC}"/>
 							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_plr_punchPistol" ID="{9FA567F3-25DD-46E9-B840-3868D2CC0C98}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_plr_punchRifle" ID="{8B1C9DBA-6244-4BF4-8167-63439876E6F9}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_plr_punchShotgun" ID="{2AAA4326-4295-4ADE-9BD6-8621EEC3AACB}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="4" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_grenade_Explode" ID="{8F80C227-C506-4DA2-AACA-25EE6899E1BE}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="4" Y="3"/>
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>

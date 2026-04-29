@@ -9,11 +9,15 @@
 			<ChildrenList>
 				<PropertyContainer Name="Pistol" ID="{164E7025-428B-4B98-B80C-439AE91E5FD4}" ShortID="552971174">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance_FAR" ID="{1D420086-4C96-423E-A8DE-483A5867D7C9}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 						</Reference>
@@ -631,15 +635,41 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<Sound Name="plr_punchPistol" ID="{BE206C0F-08F5-4CED-8C06-DCC8A33058D7}" ShortID="706556863">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_punchPistol" ID="{3E3BF41A-7B64-45D0-922C-D1F6070FA34B}">
+									<Language>SFX</Language>
+									<AudioFile>plr_punchPistol.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="569058273"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_punchPistol" ID="{3E3BF41A-7B64-45D0-922C-D1F6070FA34B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</PropertyContainer>
 				<PropertyContainer Name="Shotgun" ID="{C32B3853-9B09-4376-B734-141A25560B0D}" ShortID="659264461">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance_FAR" ID="{1D420086-4C96-423E-A8DE-483A5867D7C9}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 						</Reference>
@@ -1298,15 +1328,41 @@
 								</ObjectList>
 							</ObjectLists>
 						</BlendContainer>
+						<Sound Name="plr_punchShotgun" ID="{E7882A86-7A88-4D91-AD64-BA8BAE57ADDF}" ShortID="1059120830">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_punchShotgun" ID="{9D7868E4-BC44-42CD-BC0E-2F44420777A8}">
+									<Language>SFX</Language>
+									<AudioFile>plr_punchShotgun.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="401836799"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_punchShotgun" ID="{9D7868E4-BC44-42CD-BC0E-2F44420777A8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</PropertyContainer>
 				<PropertyContainer Name="Rifle" ID="{DEAA3C76-CF66-4DF7-9109-1062EC2B6606}" ShortID="418168437">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Color" Type="int16" Value="15"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance_FAR" ID="{1D420086-4C96-423E-A8DE-483A5867D7C9}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 						</Reference>
@@ -1624,7 +1680,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1884,6 +1940,11 @@
 								<RandomSequenceContainer Name="rifle_MAIN" ID="{1827ACE1-8112-4240-A2B8-B68A14D48953}" ShortID="379642082">
 									<PropertyList>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2534,6 +2595,28 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="plr_punchRifle" ID="{FF6EB20B-6EDF-4F9B-A8C4-35FEC1F355D9}" ShortID="893028053">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="plr_punchRifle" ID="{F6AAFD44-62CA-4185-B54D-D54B3D9E3471}">
+									<Language>SFX</Language>
+									<AudioFile>plr_punchRifle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632331408"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="plr_punchRifle" ID="{F6AAFD44-62CA-4185-B54D-D54B3D9E3471}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</PropertyContainer>
 				<RandomSequenceContainer Name="Shells" ID="{332A5F57-9013-4BB0-8630-0FD911FC9A27}" ShortID="582148973">
@@ -2568,6 +2651,9 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance_FAR" ID="{1D420086-4C96-423E-A8DE-483A5867D7C9}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 						</Reference>
@@ -2946,6 +3032,321 @@
 						</Position>
 					</PositioningInfo>
 				</RandomSequenceContainer>
+				<PropertyContainer Name="Grenade" ID="{0E931171-03F9-404F-951A-2E41D73EB0C2}" ShortID="526475459">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance_FAR" ID="{1D420086-4C96-423E-A8DE-483A5867D7C9}" WorkUnitID="{B455ED0E-5A97-4605-98BE-A0609BA8D89F}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="grenade_Bounce" ID="{F8F48D02-FB6C-46E1-BD35-FE0EE4280F96}" ShortID="708792884">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="grenade_Bounce_001" ID="{9D42B44A-DB1B-4CDE-B19E-82DB6671B380}" ShortID="816490297">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Bounce_001" ID="{966B6EE7-650C-40A0-8890-FD720E6AE5F8}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Bounce_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="259111157"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Bounce_001" ID="{966B6EE7-650C-40A0-8890-FD720E6AE5F8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Bounce_002" ID="{1E11A7FF-ABC7-45EF-BA3E-1ECAC577286F}" ShortID="57369565">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Bounce_002" ID="{25938E5A-4CF8-4533-BDE8-331D7EDEF446}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Bounce_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="219201330"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Bounce_002" ID="{25938E5A-4CF8-4533-BDE8-331D7EDEF446}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Bounce_003" ID="{86EAC7DD-3A43-4F85-8DAF-741AB3FDBFA9}" ShortID="282440267">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Bounce_003" ID="{C19AA1FD-4B03-4367-B36E-4A1DD8F9081D}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Bounce_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="810164937"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Bounce_003" ID="{C19AA1FD-4B03-4367-B36E-4A1DD8F9081D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="grenade_Explode" ID="{286EC194-0176-4DE5-9CEA-500E45E85587}" ShortID="316410778">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="grenade_Explode_001" ID="{25A30F7C-52AA-44C9-A8AC-BF66F088C47E}" ShortID="883745087">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Explode_001" ID="{845DD456-9CA5-450E-A94C-3350D0D3A26B}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Explode_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="638199350"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Explode_001" ID="{845DD456-9CA5-450E-A94C-3350D0D3A26B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Explode_002" ID="{832EA2EE-22E1-4878-9D08-726687836B35}" ShortID="975543625">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Explode_002" ID="{375CAEE1-D232-4AC3-A570-30A256D79675}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Explode_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="838449257"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Explode_002" ID="{375CAEE1-D232-4AC3-A570-30A256D79675}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Explode_003" ID="{9CFF0B38-62D9-4BF3-9EAD-EB23228D9724}" ShortID="119762373">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Explode_003" ID="{84D810CD-2613-4BF9-A8AD-10F809BAF999}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Explode_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="144016852"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Explode_003" ID="{84D810CD-2613-4BF9-A8AD-10F809BAF999}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="grenade_Tail" ID="{A596C5E5-AE2F-43AD-B3B3-2F290DB234B8}" ShortID="264288291">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="grenade_Tail_001" ID="{0DD555E5-75E6-4A1C-B902-338F9B876432}" ShortID="615285247">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Tail_001" ID="{EA77D0A3-437D-4C5E-98AA-93A3786649E3}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Tail_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="961692293"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Tail_001" ID="{EA77D0A3-437D-4C5E-98AA-93A3786649E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Tail_002" ID="{E52DF490-4B77-4E2C-953D-B2F9C71D8AEA}" ShortID="12084565">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Tail_002" ID="{C63B4A06-237E-4C0C-B444-BF25EB0B5128}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Tail_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="132773881"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Tail_002" ID="{C63B4A06-237E-4C0C-B444-BF25EB0B5128}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="grenade_Tail_003" ID="{14D60CA6-0F21-480C-B537-31F938F6F7A2}" ShortID="32423442">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="grenade_Tail_003" ID="{CD0021B6-789C-4001-9BB3-8AFD2AF7BB49}">
+											<Language>SFX</Language>
+											<AudioFile>grenade_Tail_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78817461"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="grenade_Tail_003" ID="{CD0021B6-789C-4001-9BB3-8AFD2AF7BB49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="plr_throwGrenade" ID="{591ADF20-2632-4ABE-A6C0-F32A01CA4824}" ShortID="496181971">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="plr_throwGrenade_001" ID="{7E834CD5-1DD6-4AC9-8169-EEFF10789DF1}" ShortID="532026752">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="plr_throwGrenade_001" ID="{972F0156-EDB1-498E-9233-F2D7E782D18E}">
+											<Language>SFX</Language>
+											<AudioFile>plr_throwGrenade_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1016404148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="plr_throwGrenade_001" ID="{972F0156-EDB1-498E-9233-F2D7E782D18E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="plr_throwGrenade_002" ID="{62829B1B-BDAA-4149-8786-904B442D49E4}" ShortID="259148450">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="plr_throwGrenade_002" ID="{720A6483-C211-4F02-AE59-C8F99B937FEE}">
+											<Language>SFX</Language>
+											<AudioFile>plr_throwGrenade_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="927959807"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="plr_throwGrenade_002" ID="{720A6483-C211-4F02-AE59-C8F99B937FEE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</PropertyContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

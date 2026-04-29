@@ -3,9 +3,9 @@
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Attenuations\Factory Attenuations.wwu" DateLow="1776939922" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Busses\Default Work Unit.wwu" DateLow="1777411837" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Default Work Unit.wwu" DateLow="1777409373" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Player.wwu" DateLow="1777412170" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Weapons.wwu" DateLow="1777412170" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Default Work Unit.wwu" DateLow="1777450975" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Player.wwu" DateLow="1777451382" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Containers\Weapons.wwu" DateLow="1777451382" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1776939922" DateHigh="0"/>
@@ -13,9 +13,9 @@
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Effects\Factory Effects.wwu" DateLow="1776939922" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Default Work Unit.wwu" DateLow="1777405975" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Player.wwu" DateLow="1777411837" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Weapons.wwu" DateLow="1777411837" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Default Work Unit.wwu" DateLow="1777451078" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Player.wwu" DateLow="1777450975" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Events\Weapons.wwu" DateLow="1777451078" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
@@ -25,13 +25,13 @@
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Queries\Factory Queries.wwu" DateLow="1776939922" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Sidechain Mixes\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1777411871" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1777410227" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1777451078" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1777451382" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\States\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1777120177" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\ueLyraStarterGame_WwiseProject.crossover.wsettings" DateLow="1777412183" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\ueLyraStarterGame_WwiseProject.wproj" DateLow="1776940944" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\ueLyraStarterGame_WwiseProject.crossover.wsettings" DateLow="1777451391" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\ueLyraStarterGame_WwiseProject.wproj" DateLow="1777413126" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Unreal Projects\ueLyraStarterGame\ueLyraStarterGame_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1776940944" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1777412877" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Library\Application Support\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1777451391" DateHigh="0"/>
 </ValidationCache>

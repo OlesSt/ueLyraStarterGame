@@ -10,6 +10,11 @@
 				<Event Name="Play_plr_foleyStand" ID="{7B1A02B3-B448-4E3B-AF81-24FBCBF2A9AC}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -25,6 +30,11 @@
 				<Event Name="Play_plr_foleyJump" ID="{F5CBDF32-0A21-40B6-8174-98E9DA8E33E3}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -40,6 +50,11 @@
 				<Event Name="Play_plr_FootLand" ID="{2DBFB3CD-1B6B-42D7-BBA3-3B14C1E377ED}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -55,6 +70,11 @@
 				<Event Name="Play_plr_foleySit" ID="{08E1497C-0AE9-496A-B9D6-99C77E5C9945}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -70,6 +90,11 @@
 				<Event Name="Play_plr_FootSteps" ID="{194CC304-D979-4C93-965C-2AB6FDC4634E}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -85,6 +110,11 @@
 				<Event Name="Play_plr_Dash" ID="{361F7655-D5E6-4149-BAED-249F238DD362}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -100,6 +130,16 @@
 				<Event Name="Play_plr_Dead" ID="{AD367FD2-F476-48C6-8CAF-1D5734BDD6E1}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="CooldownTime" Type="Real32">
+							<ValueList>
+								<Value>0.2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -140,6 +180,11 @@
 				<Event Name="Play_plr_Emote" ID="{2D01A12C-EF64-4E50-B4CD-C007202C92F5}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -173,6 +218,11 @@
 				<Event Name="Stop_plr_Dash" ID="{167CFA34-B174-4E1F-A79D-698A4BD6D428}">
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="14"/>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
@@ -183,6 +233,62 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="plr_Dash" ID="{6627EC8F-0805-47AE-BA09-0BBEFA9A37D1}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_aimOut" ID="{224A4DDF-AFEA-4222-9756-91807C3C1408}">
+					<PropertyList>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{541BE9A7-B544-40FF-B320-DBA1056EF60A}" ShortID="898454142">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_aimIn" ID="{7163BBF0-151D-47E1-AF30-DBA319BE5559}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CE169E75-0294-4699-BB34-55DCCF5C03EB}" ShortID="44107508">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_aimOut" ID="{A6625D4A-761E-476A-9579-BCD5AC32B1D6}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_plr_aimIn" ID="{BDFC81A7-33C9-485D-A020-98BFA371D97F}">
+					<PropertyList>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{5D0EE7DF-B8E7-4F09-85F1-9893D6D0CF62}" ShortID="906423690">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_aimOut" ID="{A6625D4A-761E-476A-9579-BCD5AC32B1D6}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1AE9F565-BE3A-44D5-B8B5-0D69171B694D}" ShortID="565670298">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="plr_aimIn" ID="{7163BBF0-151D-47E1-AF30-DBA319BE5559}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
