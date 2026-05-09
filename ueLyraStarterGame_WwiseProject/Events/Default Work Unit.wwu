@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_MusicSwitch" ID="{C9BEA678-76DE-4065-9923-3B14492C53F1}">
+					<PropertyList>
+						<Property Name="InstanceLimit" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{A3E8D24A-B3D8-443B-9A63-05B7F9073F66}" ShortID="842591664">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{C5BADF81-A28B-4CDE-A4F8-8EBBB7191A26}" WorkUnitID="{D5FF2BE4-F0ED-4F93-B684-66B43E467D08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MusicSwitch" ID="{11EA0FD9-38A0-4EE7-8E8B-096157CA3B32}">
+					<ChildrenList>
+						<Action Name="" ID="{55D1C3F6-F922-47F1-BB18-A98F2AC7B882}" ShortID="612555911">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{C5BADF81-A28B-4CDE-A4F8-8EBBB7191A26}" WorkUnitID="{D5FF2BE4-F0ED-4F93-B684-66B43E467D08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{33CE78B1-F34C-42E8-9984-B519BCC5C24C}" SchemaVersion="133">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{33CE78B1-F34C-42E8-9984-B519BCC5C24C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{33CE78B1-F34C-42E8-9984-B519BCC5C24C}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="ST_MUSIC" ID="{4A3D39FC-D762-4774-B79C-DDC48EE99302}">
+					<ChildrenList>
+						<State Name="None" ID="{EFF74B2C-D652-42AA-B8DF-22C88D1B8898}"/>
+						<State Name="Menu" ID="{C64265B2-5422-464A-A98D-A0037E244549}"/>
+						<State Name="Combat_A" ID="{A68708E0-81BB-47D6-AB5D-A3B692BCC368}"/>
+						<State Name="Combat_B" ID="{15C1E10D-8222-4649-8C06-C9257E4A406D}"/>
+						<State Name="EndingWIN" ID="{5F38837B-DEA1-4386-BD72-4D41EA2F6210}"/>
+						<State Name="EndingLOSE" ID="{9B9D6346-6775-471B-9CD8-054D66178E8A}"/>
+						<State Name="Combat_Start" ID="{4F074935-15FF-4D9A-88A9-B2D1B4D71CB5}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
