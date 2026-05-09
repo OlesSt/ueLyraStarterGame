@@ -12,6 +12,16 @@
 						</Property>
 					</PropertyList>
 					<ChildrenList>
+						<Action Name="" ID="{C4AC8BDE-B6FB-44BC-8F1D-E0A45BBF52A8}" ShortID="582634551">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{C5BADF81-A28B-4CDE-A4F8-8EBBB7191A26}" WorkUnitID="{D5FF2BE4-F0ED-4F93-B684-66B43E467D08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{A3E8D24A-B3D8-443B-9A63-05B7F9073F66}" ShortID="842591664">
 							<ReferenceList>
 								<Reference Name="Target">

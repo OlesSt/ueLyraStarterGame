@@ -15,18 +15,105 @@
 								<Property Name="Color" Type="int16" Value="14"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{CF1ADB28-C78D-448B-9D05-BAAE59F3032D}" ShortID="24588702">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{A4364745-1B2A-400B-A3B8-F770D3A3F1BD}" ShortID="256084485" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FrequencyBand1" Type="Real32" Value="70.22383"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="2347.193"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="120"/>
+															<Property Name="GainBand1" Type="Real32" Value="-6"/>
+															<Property Name="GainBand2" Type="Real32" Value="-3"/>
+															<Property Name="GainBand3" Type="Real32" Value="-12"/>
+															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+															<Property Name="QFactorBand3" Type="Real32" Value="4"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
 						<Bus Name="bus_Weapons" ID="{CE1739F3-9B17-426A-9F65-64BCB1F8A3FF}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{2BF70EC9-6DF5-4BF4-B98F-B8BB75B186E8}" ShortID="285348291">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{F6B5EE4B-37CB-4045-BADC-5452168CDAA5}" ShortID="1068493246" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+															<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="4238.705"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="1834"/>
+															<Property Name="GainBand1" Type="Real32" Value="3"/>
+															<Property Name="GainBand2" Type="Real32" Value="-6"/>
+															<Property Name="GainBand3" Type="Real32" Value="3"/>
+															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+															<Property Name="QFactorBand1" Type="Real32" Value="2.4"/>
+															<Property Name="QFactorBand2" Type="Real32" Value="3"/>
+															<Property Name="QFactorBand3" Type="Real32" Value="0.5"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
 						<Bus Name="bus_Music" ID="{2E0836F0-86B3-4B3B-9F44-D74756014FFE}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="16"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{F2E29F5D-C85E-49E7-B6B5-976D5E97E36B}" ShortID="582307232">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{7A3133FB-A0D1-4A34-8D29-7FD0760E8B59}" ShortID="458308432" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="FilterTypeBand1" Type="int32" Value="6"/>
+															<Property Name="FilterTypeBand4" Type="int32" Value="5"/>
+															<Property Name="FrequencyBand1" Type="Real32" Value="100"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="1461.054"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="6500"/>
+															<Property Name="FrequencyBand4" Type="Real32" Value="3250"/>
+															<Property Name="GainBand1" Type="Real32" Value="-6"/>
+															<Property Name="GainBand2" Type="Real32" Value="-6"/>
+															<Property Name="GainBand3" Type="Real32" Value="-3"/>
+															<Property Name="GainBand4" Type="Real32" Value="-3"/>
+															<Property Name="NumBands" Type="int32" Value="4"/>
+															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+															<Property Name="OnOffBand4" Type="bool" Value="True"/>
+															<Property Name="QFactorBand1" Type="Real32" Value="1.8"/>
+															<Property Name="QFactorBand2" Type="Real32" Value="0.6"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
 					</ChildrenList>
 				</Bus>
