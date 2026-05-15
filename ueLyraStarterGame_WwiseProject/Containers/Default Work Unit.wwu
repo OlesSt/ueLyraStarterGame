@@ -2,8 +2,49 @@
 <WwiseDocument Type="WorkUnit" ID="{D0116F66-7C95-4F84-8B63-A99257E24270}" SchemaVersion="133">
 	<Containers>
 		<WorkUnit Name="Default Work Unit" ID="{D0116F66-7C95-4F84-8B63-A99257E24270}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="20"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
-				<Sound Name="TestSound" ID="{794577CA-F847-4AF5-934C-53FAAC5FA997}" ShortID="864707211">
+				<Sound Name="ui_button_Hint" ID="{9DFB8F5C-2B4B-4FF3-8339-1817062E43AB}" ShortID="600298414">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="bus_UI" ID="{055251D2-2758-4BF2-A359-4B5CFE4FF1E0}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui_Element_001" ID="{3D28D455-9514-4247-A684-A774A5C04B2C}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.17817"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.26906"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.3164"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.77447"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ui_Element_001.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="515655542"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui_Element_001" ID="{3D28D455-9514-4247-A684-A774A5C04B2C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ui_hud_Count" ID="{79A11306-D861-444A-B6C2-19F4ED44EFAB}" ShortID="1008970689">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="20"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
@@ -13,18 +54,398 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Perc_Cinematic-001" ID="{F6C76F72-4011-46F8-AD71-0F32A456D7C1}">
+						<AudioFileSource Name="ui_Element_011" ID="{13E45D30-B6F6-4EC0-92D9-EDF42DE09B6B}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.28329"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.30239"/>
+							</PropertyList>
 							<Language>SFX</Language>
-							<AudioFile>Perc_Cinematic-001.wav</AudioFile>
+							<AudioFile>ui_Element_011.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="564251991"/>
+								<MediaID ID="931205101"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Perc_Cinematic-001" ID="{F6C76F72-4011-46F8-AD71-0F32A456D7C1}" Platform="Linked"/>
+						<ActiveSource Name="ui_Element_011" ID="{13E45D30-B6F6-4EC0-92D9-EDF42DE09B6B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<BlendContainer Name="ui_button_Tap" ID="{59ACC0CA-55D3-4BA2-B3F6-111B9B85040F}" ShortID="125843752">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ui_Element_009" ID="{0982AA4C-9FB4-4F62-A2C3-ED58543CAE05}" ShortID="1017888240">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_009" ID="{58D6C914-561B-4B7E-8F0B-40B2B2B56AF5}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.01903"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.6095"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.10469"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.49844"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="192712596"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_009" ID="{58D6C914-561B-4B7E-8F0B-40B2B2B56AF5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_007" ID="{72D05BC3-A014-42F3-9FD3-79CB040832EB}" ShortID="128535323">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_007" ID="{A69B4584-2555-4B08-9F25-E899D0BBB229}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.88331"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.0072"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_007.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="80157391"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_007" ID="{A69B4584-2555-4B08-9F25-E899D0BBB229}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="ui_button_Back" ID="{F701A281-6782-412F-978E-67FC7740C628}" ShortID="280307759">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ui_Element_009" ID="{262896B7-9C7F-4A95-A869-DB9F15AC7401}" ShortID="811804648">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_009" ID="{1F8075FA-9399-4C31-9749-9AC41D922F5B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.01903"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.6095"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.10469"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.49844"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_009.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="192712596"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_009" ID="{1F8075FA-9399-4C31-9749-9AC41D922F5B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_004" ID="{B7F84D61-B98F-42DC-862F-C919A967DD3E}" ShortID="566291338">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_004" ID="{5461B275-EDD3-467C-BEE7-68A23969B637}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1056812018"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_004" ID="{5461B275-EDD3-467C-BEE7-68A23969B637}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="ui_button_Play" ID="{CCA9ABEA-990D-44DC-ADED-D1641C270587}" ShortID="943987165">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ui_Element_010" ID="{0D276BAF-5309-48F4-A633-A5D47FA8F4B9}" ShortID="76466978">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_010" ID="{B19581AD-9A1C-4D85-ADE4-2F09CD1FF275}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_010.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="729097184"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_010" ID="{B19581AD-9A1C-4D85-ADE4-2F09CD1FF275}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_008" ID="{B44806A3-AE4E-4A76-B97A-B51218A4934F}" ShortID="793698957">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_008" ID="{1FBCCFF5-127A-4142-913F-807E68773C16}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_008.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="592043866"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_008" ID="{1FBCCFF5-127A-4142-913F-807E68773C16}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="ui_hud_Go" ID="{3B98CADE-FD3C-4A9C-9476-75C5767C9718}" ShortID="496367246">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ui_Element_006" ID="{2DBFD32B-6E3C-4D42-B2EC-6E70BD38656B}" ShortID="70269518">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_006" ID="{4E7BF851-CB3F-4707-BB85-499ED0461319}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="755608804"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_006" ID="{4E7BF851-CB3F-4707-BB85-499ED0461319}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_012" ID="{BCC43FED-6279-46AE-A370-9DA4BD220969}" ShortID="760833869">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_012" ID="{7980C44D-D26A-485F-AEC2-7D032F944808}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_012.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016378083"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_012" ID="{7980C44D-D26A-485F-AEC2-7D032F944808}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+				<BlendContainer Name="ui_hud_Common" ID="{C9A502CB-553C-4DB5-9D78-B8A813D0FBCC}" ShortID="783937065">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ui_Element_002" ID="{E49D19A3-6E9A-43B6-AA78-5F2CD0596E42}" ShortID="830292663">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_002" ID="{3E262E17-A2D5-459F-A074-1E2326405D2C}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632394864"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_002" ID="{3E262E17-A2D5-459F-A074-1E2326405D2C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_003" ID="{FAFAB973-B0C5-4935-B1CA-51D79E51627C}" ShortID="267006971">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_003" ID="{A0C03D60-40EB-44EA-9660-6E71BB901F54}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="652666952"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_003" ID="{A0C03D60-40EB-44EA-9660-6E71BB901F54}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ui_Element_005" ID="{5233EB3F-0715-4CE9-AB97-07867B14D6C8}" ShortID="432238564">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ui_Element_005" ID="{193E055B-8DCF-4F49-BEC1-A6C68F3B5947}">
+									<Language>SFX</Language>
+									<AudioFile>ui_Element_005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="84706762"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ui_Element_005" ID="{193E055B-8DCF-4F49-BEC1-A6C68F3B5947}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

@@ -14,7 +14,13 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="14"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb_TEST" ID="{988E1CF4-D2E2-4720-BD67-829045C612F8}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{CF1ADB28-C78D-448B-9D05-BAAE59F3032D}" ShortID="24588702">
@@ -44,7 +50,13 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb_TEST" ID="{988E1CF4-D2E2-4720-BD67-829045C612F8}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
 									<EffectSlot Name="" ID="{2BF70EC9-6DF5-4BF4-B98F-B8BB75B186E8}" ShortID="285348291">
@@ -77,11 +89,16 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Color" Type="int16" Value="16"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-18</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
@@ -115,6 +132,25 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="bus_UI" ID="{055251D2-2758-4BF2-A359-4B5CFE4FF1E0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="20"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="verb_UI" ID="{BE696582-C0FD-42E5-8AD6-094989A9EDCE}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<AuxBus Name="verb_ROOM" ID="{8FC0E81A-3A51-4777-8784-5E68730D584A}"/>
+						<AuxBus Name="verb_TEST" ID="{988E1CF4-D2E2-4720-BD67-829045C612F8}"/>
+						<AuxBus Name="verb_UI" ID="{BE696582-C0FD-42E5-8AD6-094989A9EDCE}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

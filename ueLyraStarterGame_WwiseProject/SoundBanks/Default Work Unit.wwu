@@ -52,6 +52,19 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="bnk_UI" ID="{C7DB7D42-0A39-425B-A298-3273E78B4103}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_ui_hud_Go" ID="{6100C645-FD98-403C-ABC1-CD56952009FA}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_button_Back" ID="{E2E983F4-BFEF-4331-9910-93CDF1FB0F54}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_button_Play" ID="{4D7AA606-CC1A-454B-9DDD-44F5CB0C55F7}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_hud_Common" ID="{B38F8236-0AEC-49A5-901D-D52BE4B5B313}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_button_Hint" ID="{8E948CE3-E96E-49F6-876B-6D75253004BC}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_button_Tap" ID="{9356702B-B780-4B63-A914-B027AD4B3369}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_ui_hud_Count" ID="{6E5A61B6-BDF8-4E66-9A6C-5F5DC2896D15}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

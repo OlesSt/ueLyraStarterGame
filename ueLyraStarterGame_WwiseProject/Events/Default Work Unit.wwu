@@ -45,6 +45,90 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ui_button_Hint" ID="{8E948CE3-E96E-49F6-876B-6D75253004BC}">
+					<PropertyList>
+						<Property Name="CooldownTime" Type="Real32">
+							<ValueList>
+								<Value>0.1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{A9EF51A4-3D2E-413E-BAD9-F16A8CBA22E4}" ShortID="61122591">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_button_Hint" ID="{9DFB8F5C-2B4B-4FF3-8339-1817062E43AB}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_button_Tap" ID="{9356702B-B780-4B63-A914-B027AD4B3369}">
+					<ChildrenList>
+						<Action Name="" ID="{8459D5F0-F9F2-484F-8A63-BC3B65F82B3D}" ShortID="170456462">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_button_Tap" ID="{59ACC0CA-55D3-4BA2-B3F6-111B9B85040F}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_button_Back" ID="{E2E983F4-BFEF-4331-9910-93CDF1FB0F54}">
+					<ChildrenList>
+						<Action Name="" ID="{6CE795F5-DF49-472F-BD95-343CA614F549}" ShortID="378846792">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_button_Back" ID="{F701A281-6782-412F-978E-67FC7740C628}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_button_Play" ID="{4D7AA606-CC1A-454B-9DDD-44F5CB0C55F7}">
+					<ChildrenList>
+						<Action Name="" ID="{F166CE28-6F2F-4809-8EA0-2DD35BE33B1E}" ShortID="437399937">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_button_Play" ID="{CCA9ABEA-990D-44DC-ADED-D1641C270587}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_hud_Count" ID="{6E5A61B6-BDF8-4E66-9A6C-5F5DC2896D15}">
+					<ChildrenList>
+						<Action Name="" ID="{7BF5C37B-66F2-4583-8176-A05C45E24773}" ShortID="676782135">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_hud_Count" ID="{79A11306-D861-444A-B6C2-19F4ED44EFAB}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_hud_Go" ID="{6100C645-FD98-403C-ABC1-CD56952009FA}">
+					<ChildrenList>
+						<Action Name="" ID="{9A6E142B-AAAA-497E-BB2E-2303A09A2C82}" ShortID="178146369">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_hud_Go" ID="{3B98CADE-FD3C-4A9C-9476-75C5767C9718}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ui_hud_Common" ID="{B38F8236-0AEC-49A5-901D-D52BE4B5B313}">
+					<ChildrenList>
+						<Action Name="" ID="{5963BA7D-90DF-4363-B1B7-42566FC0A7A2}" ShortID="721689305">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ui_hud_Common" ID="{C9A502CB-553C-4DB5-9D78-B8A813D0FBCC}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
