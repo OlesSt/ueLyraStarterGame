@@ -111,6 +111,110 @@
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="UI_MIX" ID="{5496BBE9-A4EF-4B19-936A-691E23CA688E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="ui_button_Hint" ID="{9DFB8F5C-2B4B-4FF3-8339-1817062E43AB}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_hud_Common" ID="{C9A502CB-553C-4DB5-9D78-B8A813D0FBCC}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_button_Tap" ID="{59ACC0CA-55D3-4BA2-B3F6-111B9B85040F}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_hud_Count" ID="{79A11306-D861-444A-B6C2-19F4ED44EFAB}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_button_Back" ID="{F701A281-6782-412F-978E-67FC7740C628}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_hud_Go" ID="{3B98CADE-FD3C-4A9C-9476-75C5767C9718}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_button_Play" ID="{CCA9ABEA-990D-44DC-ADED-D1641C270587}" WorkUnitID="{D0116F66-7C95-4F84-8B63-A99257E24270}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="MIXING" ID="{D3DBF013-7F50-4233-A0E4-17F6DFE96C12}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_MusicSwitch" ID="{C9BEA678-76DE-4065-9923-3B14492C53F1}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_button_Back" ID="{E2E983F4-BFEF-4331-9910-93CDF1FB0F54}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_button_Hint" ID="{8E948CE3-E96E-49F6-876B-6D75253004BC}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_hud_Common" ID="{B38F8236-0AEC-49A5-901D-D52BE4B5B313}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_button_Tap" ID="{9356702B-B780-4B63-A914-B027AD4B3369}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_hud_Count" ID="{6E5A61B6-BDF8-4E66-9A6C-5F5DC2896D15}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_button_Play" ID="{4D7AA606-CC1A-454B-9DDD-44F5CB0C55F7}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_hud_Go" ID="{6100C645-FD98-403C-ABC1-CD56952009FA}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="MIX_WEAPON" ID="{B1A4FFEC-D907-4987-85CB-1C17533552CA}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_MusicSwitch" ID="{C9BEA678-76DE-4065-9923-3B14492C53F1}" WorkUnitID="{BEA00764-8C7F-44C4-8A3B-B45E7092C294}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_grenade_Explode" ID="{8F80C227-C506-4DA2-AACA-25EE6899E1BE}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Shotgun_FIRE" ID="{999D9DEA-91E1-4EEA-B4EE-0B129C2A9DFA}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="plr_Spawn" ID="{D4E465C1-3D80-4860-9C1E-B11C322DAA60}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pistol_FIRE" ID="{95510AC8-0CF8-45FC-99CA-442AA26AC4BE}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="plr_Dead" ID="{DF897945-7A90-4352-9D01-2BAE56F548BB}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Rifle_FIRE" ID="{F9A72B75-8ADC-49DE-91D1-4EF74657F9EA}" WorkUnitID="{B7457445-5182-41C1-83AD-5CFCB82971C7}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="plr_FootSteps" ID="{096ED9BA-D02A-41F8-8574-9B7E7D1C3498}" WorkUnitID="{22A19B78-033F-4942-974D-5DEAE5D821DB}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

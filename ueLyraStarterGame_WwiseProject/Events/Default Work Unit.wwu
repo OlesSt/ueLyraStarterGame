@@ -5,11 +5,13 @@
 			<ChildrenList>
 				<Event Name="Play_MusicSwitch" ID="{C9BEA678-76DE-4065-9923-3B14492C53F1}">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
 						<Property Name="InstanceLimit" Type="int16">
 							<ValueList>
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{C4AC8BDE-B6FB-44BC-8F1D-E0A45BBF52A8}" ShortID="582634551">
@@ -32,6 +34,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_MusicSwitch" ID="{11EA0FD9-38A0-4EE7-8E8B-096157CA3B32}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{55D1C3F6-F922-47F1-BB18-A98F2AC7B882}" ShortID="612555911">
 							<PropertyList>
@@ -47,11 +53,13 @@
 				</Event>
 				<Event Name="Play_ui_button_Hint" ID="{8E948CE3-E96E-49F6-876B-6D75253004BC}">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="CooldownTime" Type="Real32">
 							<ValueList>
 								<Value>0.1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{A9EF51A4-3D2E-413E-BAD9-F16A8CBA22E4}" ShortID="61122591">
@@ -64,6 +72,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_button_Tap" ID="{9356702B-B780-4B63-A914-B027AD4B3369}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{8459D5F0-F9F2-484F-8A63-BC3B65F82B3D}" ShortID="170456462">
 							<ReferenceList>
@@ -75,6 +87,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_button_Back" ID="{E2E983F4-BFEF-4331-9910-93CDF1FB0F54}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{6CE795F5-DF49-472F-BD95-343CA614F549}" ShortID="378846792">
 							<ReferenceList>
@@ -86,6 +102,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_button_Play" ID="{4D7AA606-CC1A-454B-9DDD-44F5CB0C55F7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{F166CE28-6F2F-4809-8EA0-2DD35BE33B1E}" ShortID="437399937">
 							<ReferenceList>
@@ -97,6 +117,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_hud_Count" ID="{6E5A61B6-BDF8-4E66-9A6C-5F5DC2896D15}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{7BF5C37B-66F2-4583-8176-A05C45E24773}" ShortID="676782135">
 							<ReferenceList>
@@ -108,6 +132,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_hud_Go" ID="{6100C645-FD98-403C-ABC1-CD56952009FA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{9A6E142B-AAAA-497E-BB2E-2303A09A2C82}" ShortID="178146369">
 							<ReferenceList>
@@ -119,6 +147,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_ui_hud_Common" ID="{B38F8236-0AEC-49A5-901D-D52BE4B5B313}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{5963BA7D-90DF-4363-B1B7-42566FC0A7A2}" ShortID="721689305">
 							<ReferenceList>

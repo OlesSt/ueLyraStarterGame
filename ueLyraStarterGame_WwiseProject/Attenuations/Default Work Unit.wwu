@@ -276,6 +276,7 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>5000</XPos>
@@ -313,7 +314,7 @@
 										</Point>
 										<Point>
 											<XPos>5000</XPos>
-											<YPos>20</YPos>
+											<YPos>30</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>

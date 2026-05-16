@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D881F825-8714-4DBC-BA47-2A4671817C60}" SchemaVersion="133">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{D881F825-8714-4DBC-BA47-2A4671817C60}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D881F825-8714-4DBC-BA47-2A4671817C60}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="MIXING" ID="{E9AAB8BD-A5C2-47D5-8490-7B3BCAEFB0CF}">
+					<ObjectList>
+						<ObjectRef Name="bus_Music" ID="{2E0836F0-86B3-4B3B-9F44-D74756014FFE}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						<ObjectRef Name="bus_UI" ID="{055251D2-2758-4BF2-A359-4B5CFE4FF1E0}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						<ObjectRef Name="bus_Player" ID="{EEF43845-4E84-444B-B292-1D4684F0DD6F}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						<ObjectRef Name="bus_Weapons" ID="{CE1739F3-9B17-426A-9F65-64BCB1F8A3FF}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						<ObjectRef Name="verb_ROOM" ID="{8FC0E81A-3A51-4777-8784-5E68730D584A}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+						<ObjectRef Name="verb_UI" ID="{BE696582-C0FD-42E5-8AD6-094989A9EDCE}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

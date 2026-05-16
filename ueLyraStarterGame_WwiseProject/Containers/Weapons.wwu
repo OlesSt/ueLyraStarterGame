@@ -33,7 +33,7 @@
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -81,6 +81,11 @@
 						<Sound Name="plr_chargePistol" ID="{35B3349A-6B86-482C-BB64-B2D0933E4258}" ShortID="979166162">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -112,6 +117,11 @@
 						<Sound Name="plr_equipPistol" ID="{0DCFEC5C-843F-4836-8C40-83DEB8206C12}" ShortID="558115613">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -673,32 +683,37 @@
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{9B8DF205-6161-46C0-A8DB-604B4B51AE48}" ShortID="75265500">
-										<ReferenceList>
-											<Reference Name="Effect">
-												<Custom>
-													<Effect Name="Compressor (Custom)" ID="{5B3A6859-0627-4298-9A85-134293590EDE}" ShortID="274531697" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
-														<PropertyList>
-															<Property Name="OutputGain" Type="Real32" Value="3"/>
-															<Property Name="Ratio" Type="Real32" Value="4"/>
-															<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
-															<Property Name="Threshold" Type="Real32" Value="-48"/>
-														</PropertyList>
-													</Effect>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
 									<EffectSlot Name="" ID="{77053AF2-D9E9-4E93-B792-37F8F72A4313}" ShortID="361603104">
 										<ReferenceList>
 											<Reference Name="Effect">
 												<Custom>
 													<Effect Name="Parametric EQ (Custom)" ID="{DF26E217-59FE-47D7-9B9F-3C62EBCE6ABB}" ShortID="9651477" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 														<PropertyList>
-															<Property Name="FrequencyBand3" Type="Real32" Value="4817.112"/>
-															<Property Name="GainBand3" Type="Real32" Value="-6"/>
+															<Property Name="FilterTypeBand3" Type="int32" Value="5"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="2068.677"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="6432.227"/>
+															<Property Name="GainBand2" Type="Real32" Value="-6"/>
+															<Property Name="GainBand3" Type="Real32" Value="-3"/>
 															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+															<Property Name="QFactorBand2" Type="Real32" Value="6"/>
 															<Property Name="QFactorBand3" Type="Real32" Value="0.8"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+									<EffectSlot Name="" ID="{9B8DF205-6161-46C0-A8DB-604B4B51AE48}" ShortID="75265500">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Compressor (Custom)" ID="{5B3A6859-0627-4298-9A85-134293590EDE}" ShortID="274531697" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+														<PropertyList>
+															<Property Name="AttackTime" Type="Real32" Value="0.01"/>
+															<Property Name="OutputGain" Type="Real32" Value="6"/>
+															<Property Name="Ratio" Type="Real32" Value="4"/>
+															<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
+															<Property Name="Threshold" Type="Real32" Value="-45"/>
 														</PropertyList>
 													</Effect>
 												</Custom>
@@ -830,6 +845,11 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1394,8 +1414,9 @@
 													<Effect Name="Compressor (Custom)" ID="{8F17375B-B4C4-4AE6-86E1-980D6DBFC246}" ShortID="397199031" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 														<PropertyList>
 															<Property Name="AttackTime" Type="Real32" Value="0.01"/>
-															<Property Name="OutputGain" Type="Real32" Value="3"/>
+															<Property Name="OutputGain" Type="Real32" Value="6"/>
 															<Property Name="Ratio" Type="Real32" Value="4"/>
+															<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
 															<Property Name="Threshold" Type="Real32" Value="-36"/>
 														</PropertyList>
 													</Effect>
@@ -2575,10 +2596,11 @@
 												<Custom>
 													<Effect Name="Compressor (Custom)" ID="{8114CF6C-BFFC-4814-ADBE-1B7F28BA28B5}" ShortID="1044899076" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 														<PropertyList>
-															<Property Name="AttackTime" Type="Real32" Value="0.01"/>
+															<Property Name="AttackTime" Type="Real32" Value="0.001"/>
 															<Property Name="OutputGain" Type="Real32" Value="3"/>
 															<Property Name="Ratio" Type="Real32" Value="4"/>
-															<Property Name="Threshold" Type="Real32" Value="-33"/>
+															<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
+															<Property Name="Threshold" Type="Real32" Value="-36"/>
 														</PropertyList>
 													</Effect>
 												</Custom>
@@ -2591,6 +2613,11 @@
 						<RandomSequenceContainer Name="plr_equipRifle" ID="{6EBCEE41-553D-4DBC-8ED2-5D785A31472D}" ShortID="675245531">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2662,6 +2689,11 @@
 						<RandomSequenceContainer Name="rifle_Empty" ID="{EF59AE69-D9F2-4F54-ADDF-F25D6BF3E7F7}" ShortID="858928816">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>30</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -3186,7 +3218,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{91C32489-2745-4115-9FCE-1A2B30F47239}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
+							<ObjectRef Name="bus_Weapons" ID="{CE1739F3-9B17-426A-9F65-64BCB1F8A3FF}" WorkUnitID="{B753DA66-6D9E-44B5-9BEF-24D3F1EE3D8E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -3378,7 +3410,7 @@
 												<Custom>
 													<Effect Name="Compressor (Custom)" ID="{0AC3C3D4-0A1F-480B-9B9E-06ECEDC5D07B}" ShortID="391610124" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 														<PropertyList>
-															<Property Name="AttackTime" Type="Real32" Value="0.01"/>
+															<Property Name="AttackTime" Type="Real32" Value="0.001"/>
 															<Property Name="Ratio" Type="Real32" Value="4"/>
 															<Property Name="ReleaseTime" Type="Real32" Value="0.05"/>
 															<Property Name="Threshold" Type="Real32" Value="-21"/>
